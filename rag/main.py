@@ -1,5 +1,8 @@
+from agent import demo
+
+
 def main():
-    print("Hello from rag!")
+    demo.launch()
 
 
 if __name__ == "__main__":
