@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-19T00:25:53.029524",
+  "sources": [
+    {
+      "tool": "structured_markdown",
+      "root_path": "C:\\שני\\תכנות\\AI\\rag\\kiro",
+      "files": [
+        {
+          "path": "kiro\\product.md",
+          "last_modified": "2026-07-11T23:29:09.366934",
+          "hash": "sha256:f1db49456c7078707c6a083703e59985be5107c4814be3bf2a7a0c5320468306"
+        },
+        {
+          "path": "kiro\\structure.md",
+          "last_modified": "2026-07-11T23:29:14.002662",
+          "hash": "sha256:fc4585785a4342377aa6dcd206dc3e13d35ec45faa15f4935fad1027d83c0be8"
+        },
+        {
+          "path": "kiro\\tech.md",
+          "last_modified": "2026-07-11T23:29:20.995542",
+          "hash": "sha256:9335b82d790f3eb1ef56aed6eb235cbd755dc2d13b5f6e13e245d4b90a92eafe"
+        }
+      ]
+    }
+  ],
+  "items": {
+    "decisions": [],
+    "rules": [],
+    "warnings": [],
+    "observations": []
+  }
+}

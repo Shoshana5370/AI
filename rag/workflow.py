@@ -1,6 +1,7 @@
 import os
 from dataclasses import dataclass, field
 from enum import Enum, auto
+from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from dotenv import load_dotenv
@@ -10,6 +11,8 @@ from llama_index.embeddings.cohere import CohereEmbedding
 from llama_index.llms.google_genai import GoogleGenAI
 from llama_index.vector_stores.pinecone import PineconeVectorStore
 from pinecone import Pinecone
+
+from structured_data import StructuredDataStore
 
 load_dotenv()
 
@@ -112,10 +115,12 @@ class RAGWorkflow:
         self,
         retriever: Any,
         response_synthesizer: Any,
+        structured_store: Optional[StructuredDataStore] = None,
         confidence_threshold: float = DEFAULT_CONFIDENCE_THRESHOLD,
     ):
         self.retriever = retriever
         self.response_synthesizer = response_synthesizer
+        self.structured_store = structured_store
         self.confidence_threshold = confidence_threshold
         self.event_handlers = {
             WorkflowEvent.START: self._validate_query,
@@ -126,6 +131,12 @@ class RAGWorkflow:
 
     def run(self, query: str) -> WorkflowResult:
         context = WorkflowContext(query=query)
+
+        if self.structured_store and self.structured_store.should_route(query):
+            structured_payload = self.structured_store.query(query)
+            if structured_payload["results"]:
+                return self._build_structured_result(structured_payload)
+
         current_event = WorkflowEvent.START
 
         while True:
@@ -234,9 +245,39 @@ class RAGWorkflow:
                 break
         return scores
 
+    def _build_structured_result(self, structured_payload: Dict[str, Any]) -> WorkflowResult:
+        lines: List[str] = [
+            f"Structured results for: {structured_payload['query']}",
+            f"Categories: {', '.join(structured_payload['categories'])}",
+            "",
+        ]
+        for item in structured_payload["results"]:
+            source = item.get("source", {})
+            location = source.get("file", "unknown file")
+            observed_at = item.get("observed_at", "unknown")
+            lines.append(
+                f"- [{item['type']}] {item['summary']} (source: {location}, observed_at: {observed_at})"
+            )
+
+        return WorkflowResult(
+            status="success",
+            message="\n".join(lines),
+            event=WorkflowEvent.SYNTHESIS_SUCCESS,
+            metadata={"route": "structured", "count": len(structured_payload["results"])},
+        )
+
 
 def create_default_workflow() -> RAGWorkflow:
     index = load_index()
     retriever = index.as_retriever()
     response_synthesizer = build_response_synthesizer()
-    return RAGWorkflow(retriever=retriever, response_synthesizer=response_synthesizer)
+    structured_store = (
+        StructuredDataStore.load("structured_data.json")
+        if Path("structured_data.json").exists()
+        else None
+    )
+    return RAGWorkflow(
+        retriever=retriever,
+        response_synthesizer=response_synthesizer,
+        structured_store=structured_store,
+    )
