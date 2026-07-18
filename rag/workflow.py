@@ -271,9 +271,10 @@ def create_default_workflow() -> RAGWorkflow:
     index = load_index()
     retriever = index.as_retriever()
     response_synthesizer = build_response_synthesizer()
+    structured_data_path = Path(__file__).resolve().parent / "structured_data.json"
     structured_store = (
-        StructuredDataStore.load("structured_data.json")
-        if Path("structured_data.json").exists()
+        StructuredDataStore.load(str(structured_data_path))
+        if structured_data_path.exists()
         else None
     )
     return RAGWorkflow(

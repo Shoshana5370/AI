@@ -22,8 +22,33 @@ CATEGORY_KEYWORDS = {
 ROUTING_KEYWORDS = {
     CATEGORY_DECISIONS: ["החלטות", "החלטה", "decision", "decisions"],
     CATEGORY_RULES: ["הנחיה", "rule", "guideline", "חייב", "אסור", "כלל"],
-    CATEGORY_WARNINGS: ["אזהרה", "warning", "רגיש", "לא לגעת", "sensitive"],
-    CATEGORY_OBSERVATIONS: ["עדכני", "שבוע", "חודש", "עדכון", "רשימה", "list", "recent"],
+    CATEGORY_WARNINGS: ["אזהרה", "warning", "רגיש", "לא לגעת", "danger", "sensitive"],
+    CATEGORY_OBSERVATIONS: [
+        "עדכני",
+        "עדכון",
+        "עדכונים",
+        "עדכן",
+        "שבוע",
+        "חודש",
+        "יום",
+        "רשימה",
+        "list",
+        "recent",
+        "מבנה",
+        "פרויקט",
+        "ארכיטקטורה",
+        "תיקיות",
+        "תיקייה",
+        "קבצים",
+        "קבצי",
+        "קובץ",
+        "תיעוד",
+        "תיעודיות",
+        "מסמכים",
+        "מסמך",
+        "source",
+        "sources",
+    ],
 }
 
 DATE_KEYWORDS = ["שבוע", "חודש", "ימים", "recent", "last"]
@@ -80,9 +105,7 @@ def _extract_items_from_file(path: Path, root_dir: Path) -> List[Dict[str, Any]]
             content = bullet_match.group(1).strip()
             category = _categorize_text(current_heading, content)
             if category is None:
-                category = _categorize_text("", content)
-            if category is None:
-                continue
+                category = CATEGORY_OBSERVATIONS
 
             title = content if len(content) < 100 else content[:97] + "..."
             item = {
@@ -102,25 +125,27 @@ def _extract_items_from_file(path: Path, root_dir: Path) -> List[Dict[str, Any]]
             items.append(item)
 
         elif line.strip():
-            category = _categorize_text(current_heading, line.strip())
-            if category:
-                content = line.strip()
-                title = content if len(content) < 100 else content[:97] + "..."
-                item = {
-                    "id": f"{category}-{path.stem}-{idx}",
-                    "type": category,
-                    "title": title,
-                    "summary": content,
-                    "tags": [],
-                    "source": {
-                        "tool": "structured_markdown",
-                        "file": str(path.relative_to(root_dir.parent)),
-                        "anchor": _slugify(current_heading) or path.stem,
-                        "line_range": [idx, idx],
-                    },
-                    "observed_at": _latest_observed_at(path),
-                }
-                items.append(item)
+            content = line.strip()
+            category = _categorize_text(current_heading, content)
+            if category is None:
+                category = CATEGORY_OBSERVATIONS
+
+            title = content if len(content) < 100 else content[:97] + "..."
+            item = {
+                "id": f"{category}-{path.stem}-{idx}",
+                "type": category,
+                "title": title,
+                "summary": content,
+                "tags": [],
+                "source": {
+                    "tool": "structured_markdown",
+                    "file": str(path.relative_to(root_dir.parent)),
+                    "anchor": _slugify(current_heading) or path.stem,
+                    "line_range": [idx, idx],
+                },
+                "observed_at": _latest_observed_at(path),
+            }
+            items.append(item)
 
     return items
 
@@ -233,19 +258,5 @@ class StructuredDataStore:
 
     def should_route(self, query: str) -> bool:
         normalized = query.lower()
-        if any(keyword in normalized for keyword in [
-            "החלטות",
-            "החלטה",
-            "רשימה",
-            "עדכני",
-            "עדכון",
-            "רגיש",
-            "אזהרה",
-            "rtl",
-            "שבוע",
-            "חודש",
-            "recent",
-            "list",
-        ]):
-            return True
-        return False
+        keywords = [keyword for keywords in ROUTING_KEYWORDS.values() for keyword in keywords]
+        return any(keyword in normalized for keyword in keywords)

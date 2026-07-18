@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-19T00:25:53.029524",
+  "generated_at": "2026-07-19T00:58:36.422616",
   "sources": [
     {
       "tool": "structured_markdown",
@@ -28,6 +28,1792 @@
     "decisions": [],
     "rules": [],
     "warnings": [],
-    "observations": []
+    "observations": [
+      {
+        "id": "observations-product-3",
+        "type": "observations",
+        "title": "Spirit of Kiro is an infinite crafting workshop game that demonstrates AI-powered game developmen...",
+        "summary": "Spirit of Kiro is an infinite crafting workshop game that demonstrates AI-powered game development. The game features:",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "product-overview",
+          "line_range": [
+            3,
+            3
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-5",
+        "type": "observations",
+        "title": "**Infinite Item Generation**: Every item is unique with AI-generated names, descriptions, damage ...",
+        "summary": "**Infinite Item Generation**: Every item is unique with AI-generated names, descriptions, damage values, and quirks",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "product-overview",
+          "line_range": [
+            5,
+            5
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-6",
+        "type": "observations",
+        "title": "**Dynamic Crafting System**: Transform, combine, and improve items using realistic crafting mecha...",
+        "summary": "**Dynamic Crafting System**: Transform, combine, and improve items using realistic crafting mechanics powered by AI",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "product-overview",
+          "line_range": [
+            6,
+            6
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-7",
+        "type": "observations",
+        "title": "**Intelligent Appraisal**: AI-driven item valuation system for selling crafted goods",
+        "summary": "**Intelligent Appraisal**: AI-driven item valuation system for selling crafted goods",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "product-overview",
+          "line_range": [
+            7,
+            7
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-8",
+        "type": "observations",
+        "title": "**Real-time Multiplayer**: WebSocket-based client-server architecture for responsive gameplay",
+        "summary": "**Real-time Multiplayer**: WebSocket-based client-server architecture for responsive gameplay",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "product-overview",
+          "line_range": [
+            8,
+            8
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-11",
+        "type": "observations",
+        "title": "1. Pull random items from the dispenser",
+        "summary": "1. Pull random items from the dispenser",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "core-game-loop",
+          "line_range": [
+            11,
+            11
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-12",
+        "type": "observations",
+        "title": "2. Craft and modify items at the workbench using AI-powered transformations",
+        "summary": "2. Craft and modify items at the workbench using AI-powered transformations",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "core-game-loop",
+          "line_range": [
+            12,
+            12
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-13",
+        "type": "observations",
+        "title": "3. Store items in inventory chest or sell them to the appraiser",
+        "summary": "3. Store items in inventory chest or sell them to the appraiser",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "core-game-loop",
+          "line_range": [
+            13,
+            13
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-14",
+        "type": "observations",
+        "title": "4. Repeat with increasingly valuable and complex items",
+        "summary": "4. Repeat with increasingly valuable and complex items",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "core-game-loop",
+          "line_range": [
+            14,
+            14
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-17",
+        "type": "observations",
+        "title": "The game heavily leverages AWS Bedrock models (Nova Pro, Claude Sonnet 3.7/4) for:",
+        "summary": "The game heavily leverages AWS Bedrock models (Nova Pro, Claude Sonnet 3.7/4) for:",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "ai-integration",
+          "line_range": [
+            17,
+            17
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-18",
+        "type": "observations",
+        "title": "Item generation and descriptions",
+        "summary": "Item generation and descriptions",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "ai-integration",
+          "line_range": [
+            18,
+            18
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-19",
+        "type": "observations",
+        "title": "Crafting logic and transformations",
+        "summary": "Crafting logic and transformations",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "ai-integration",
+          "line_range": [
+            19,
+            19
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-20",
+        "type": "observations",
+        "title": "Item appraisal and pricing",
+        "summary": "Item appraisal and pricing",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "ai-integration",
+          "line_range": [
+            20,
+            20
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-21",
+        "type": "observations",
+        "title": "Image generation via Nova Canvas",
+        "summary": "Image generation via Nova Canvas",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "ai-integration",
+          "line_range": [
+            21,
+            21
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-product-23",
+        "type": "observations",
+        "title": "This project serves as a demonstration of best practices for AI-assisted development and showcase...",
+        "summary": "This project serves as a demonstration of best practices for AI-assisted development and showcases how AI can power core game mechanics.",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\product.md",
+          "anchor": "ai-integration",
+          "line_range": [
+            23,
+            23
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:09.366934"
+      },
+      {
+        "id": "observations-structure-4",
+        "type": "observations",
+        "title": "```",
+        "summary": "```",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "root-level-organization",
+          "line_range": [
+            4,
+            4
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-5",
+        "type": "observations",
+        "title": "├── client/           # Vue.js frontend application",
+        "summary": "├── client/           # Vue.js frontend application",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "root-level-organization",
+          "line_range": [
+            5,
+            5
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-6",
+        "type": "observations",
+        "title": "├── server/           # Bun WebSocket server",
+        "summary": "├── server/           # Bun WebSocket server",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "root-level-organization",
+          "line_range": [
+            6,
+            6
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-7",
+        "type": "observations",
+        "title": "├── item-images/      # Separate service for AI image generation",
+        "summary": "├── item-images/      # Separate service for AI image generation",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "root-level-organization",
+          "line_range": [
+            7,
+            7
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-8",
+        "type": "observations",
+        "title": "├── docs/             # Project documentation",
+        "summary": "├── docs/             # Project documentation",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "root-level-organization",
+          "line_range": [
+            8,
+            8
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-9",
+        "type": "observations",
+        "title": "├── scripts/          # Deployment and setup scripts",
+        "summary": "├── scripts/          # Deployment and setup scripts",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "root-level-organization",
+          "line_range": [
+            9,
+            9
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-10",
+        "type": "observations",
+        "title": "├── docker/           # Docker configuration and data",
+        "summary": "├── docker/           # Docker configuration and data",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "root-level-organization",
+          "line_range": [
+            10,
+            10
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-11",
+        "type": "observations",
+        "title": "└── launch.ts         # Development launcher script",
+        "summary": "└── launch.ts         # Development launcher script",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "root-level-organization",
+          "line_range": [
+            11,
+            11
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-12",
+        "type": "observations",
+        "title": "```",
+        "summary": "```",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "root-level-organization",
+          "line_range": [
+            12,
+            12
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-15",
+        "type": "observations",
+        "title": "**src/components/**: Vue components for game UI elements (GameGrid, PlayerCharacter, etc.)",
+        "summary": "**src/components/**: Vue components for game UI elements (GameGrid, PlayerCharacter, etc.)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "client-structure-client",
+          "line_range": [
+            15,
+            15
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-16",
+        "type": "observations",
+        "title": "**src/systems/**: Game logic systems (physics, inventory, socket communication)",
+        "summary": "**src/systems/**: Game logic systems (physics, inventory, socket communication)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "client-structure-client",
+          "line_range": [
+            16,
+            16
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-17",
+        "type": "observations",
+        "title": "**src/stores/**: Pinia state management (game.ts)",
+        "summary": "**src/stores/**: Pinia state management (game.ts)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "client-structure-client",
+          "line_range": [
+            17,
+            17
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-18",
+        "type": "observations",
+        "title": "**src/views/**: Page-level Vue components (GameView, SignInView)",
+        "summary": "**src/views/**: Page-level Vue components (GameView, SignInView)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "client-structure-client",
+          "line_range": [
+            18,
+            18
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-19",
+        "type": "observations",
+        "title": "**src/utils/**: Utility functions (physics, items, world initialization)",
+        "summary": "**src/utils/**: Utility functions (physics, items, world initialization)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "client-structure-client",
+          "line_range": [
+            19,
+            19
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-20",
+        "type": "observations",
+        "title": "**src/assets/**: Static assets (images, CSS, game sprites)",
+        "summary": "**src/assets/**: Static assets (images, CSS, game sprites)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "client-structure-client",
+          "line_range": [
+            20,
+            20
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-21",
+        "type": "observations",
+        "title": "**iac/**: Infrastructure as Code for client deployment",
+        "summary": "**iac/**: Infrastructure as Code for client deployment",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "client-structure-client",
+          "line_range": [
+            21,
+            21
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-24",
+        "type": "observations",
+        "title": "**handlers/**: WebSocket message handlers (pull-item, sell-item, etc.)",
+        "summary": "**handlers/**: WebSocket message handlers (pull-item, sell-item, etc.)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "server-structure-server",
+          "line_range": [
+            24,
+            24
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-25",
+        "type": "observations",
+        "title": "**llm/**: AI integration (model.ts, prompts.ts, word-lists/)",
+        "summary": "**llm/**: AI integration (model.ts, prompts.ts, word-lists/)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "server-structure-server",
+          "line_range": [
+            25,
+            25
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-26",
+        "type": "observations",
+        "title": "**state/**: Data persistence layer (item-store.ts, user-store.ts)",
+        "summary": "**state/**: Data persistence layer (item-store.ts, user-store.ts)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "server-structure-server",
+          "line_range": [
+            26,
+            26
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-27",
+        "type": "observations",
+        "title": "**utils/**: Server utilities (password hashing, message formatting)",
+        "summary": "**utils/**: Server utilities (password hashing, message formatting)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "server-structure-server",
+          "line_range": [
+            27,
+            27
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-28",
+        "type": "observations",
+        "title": "**iac/**: Infrastructure as Code for server deployment",
+        "summary": "**iac/**: Infrastructure as Code for server deployment",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "server-structure-server",
+          "line_range": [
+            28,
+            28
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-29",
+        "type": "observations",
+        "title": "**__tests__/**: Unit tests with Bun test framework",
+        "summary": "**__tests__/**: Unit tests with Bun test framework",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "server-structure-server",
+          "line_range": [
+            29,
+            29
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-32",
+        "type": "observations",
+        "title": "**handlers/**: HTTP request handlers for image generation",
+        "summary": "**handlers/**: HTTP request handlers for image generation",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "item-images-service-item-images",
+          "line_range": [
+            32,
+            32
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-33",
+        "type": "observations",
+        "title": "**lib/**: Core image generation logic",
+        "summary": "**lib/**: Core image generation logic",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "item-images-service-item-images",
+          "line_range": [
+            33,
+            33
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-34",
+        "type": "observations",
+        "title": "**state/**: Vector database and Redis client integration",
+        "summary": "**state/**: Vector database and Redis client integration",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "item-images-service-item-images",
+          "line_range": [
+            34,
+            34
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-35",
+        "type": "observations",
+        "title": "**iac/**: Infrastructure as Code for image service deployment",
+        "summary": "**iac/**: Infrastructure as Code for image service deployment",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "item-images-service-item-images",
+          "line_range": [
+            35,
+            35
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-40",
+        "type": "observations",
+        "title": "The client uses a system-based architecture where independent systems communicate via events:",
+        "summary": "The client uses a system-based architecture where independent systems communicate via events:",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "frontend-systems-architecture",
+          "line_range": [
+            40,
+            40
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-41",
+        "type": "observations",
+        "title": "**Socket System**: Manages WebSocket communication",
+        "summary": "**Socket System**: Manages WebSocket communication",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "frontend-systems-architecture",
+          "line_range": [
+            41,
+            41
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-42",
+        "type": "observations",
+        "title": "**Physics System**: Handles collision detection and movement",
+        "summary": "**Physics System**: Handles collision detection and movement",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "frontend-systems-architecture",
+          "line_range": [
+            42,
+            42
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-43",
+        "type": "observations",
+        "title": "**Game Object System**: Tracks on-screen objects",
+        "summary": "**Game Object System**: Tracks on-screen objects",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "frontend-systems-architecture",
+          "line_range": [
+            43,
+            43
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-44",
+        "type": "observations",
+        "title": "**Item/Inventory Systems**: Manage game items and storage",
+        "summary": "**Item/Inventory Systems**: Manage game items and storage",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "frontend-systems-architecture",
+          "line_range": [
+            44,
+            44
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-47",
+        "type": "observations",
+        "title": "WebSocket messages follow consistent naming patterns (kebab-case)",
+        "summary": "WebSocket messages follow consistent naming patterns (kebab-case)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "message-driven-communication",
+          "line_range": [
+            47,
+            47
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-48",
+        "type": "observations",
+        "title": "Server handlers are organized by message type",
+        "summary": "Server handlers are organized by message type",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "message-driven-communication",
+          "line_range": [
+            48,
+            48
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-49",
+        "type": "observations",
+        "title": "Event-driven frontend updates maintain reactive state",
+        "summary": "Event-driven frontend updates maintain reactive state",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "message-driven-communication",
+          "line_range": [
+            49,
+            49
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-52",
+        "type": "observations",
+        "title": "Each service has its own `iac/` directory containing:",
+        "summary": "Each service has its own `iac/` directory containing:",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "infrastructure-as-code",
+          "line_range": [
+            52,
+            52
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-53",
+        "type": "observations",
+        "title": "CloudFormation YAML templates",
+        "summary": "CloudFormation YAML templates",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "infrastructure-as-code",
+          "line_range": [
+            53,
+            53
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-54",
+        "type": "observations",
+        "title": "Deployment scripts",
+        "summary": "Deployment scripts",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "infrastructure-as-code",
+          "line_range": [
+            54,
+            54
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-55",
+        "type": "observations",
+        "title": "Environment-specific configurations",
+        "summary": "Environment-specific configurations",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "infrastructure-as-code",
+          "line_range": [
+            55,
+            55
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-58",
+        "type": "observations",
+        "title": "Server tests in `__tests__/` directories alongside source code",
+        "summary": "Server tests in `__tests__/` directories alongside source code",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "testing-structure",
+          "line_range": [
+            58,
+            58
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-59",
+        "type": "observations",
+        "title": "Client tests use Vitest with Vue Test Utils",
+        "summary": "Client tests use Vitest with Vue Test Utils",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "testing-structure",
+          "line_range": [
+            59,
+            59
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-60",
+        "type": "observations",
+        "title": "Test configuration in respective package.json files",
+        "summary": "Test configuration in respective package.json files",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "testing-structure",
+          "line_range": [
+            60,
+            60
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-63",
+        "type": "observations",
+        "title": "**kebab-case**: For file names, component names, and message types",
+        "summary": "**kebab-case**: For file names, component names, and message types",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "file-naming-conventions",
+          "line_range": [
+            63,
+            63
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-64",
+        "type": "observations",
+        "title": "**camelCase**: For JavaScript/TypeScript variables and functions",
+        "summary": "**camelCase**: For JavaScript/TypeScript variables and functions",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "file-naming-conventions",
+          "line_range": [
+            64,
+            64
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-65",
+        "type": "observations",
+        "title": "**PascalCase**: For Vue components and TypeScript interfaces",
+        "summary": "**PascalCase**: For Vue components and TypeScript interfaces",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "file-naming-conventions",
+          "line_range": [
+            65,
+            65
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-structure-66",
+        "type": "observations",
+        "title": "**.ts/.js extensions**: TypeScript preferred, JavaScript for legacy word lists",
+        "summary": "**.ts/.js extensions**: TypeScript preferred, JavaScript for legacy word lists",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\structure.md",
+          "anchor": "file-naming-conventions",
+          "line_range": [
+            66,
+            66
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:14.002662"
+      },
+      {
+        "id": "observations-tech-4",
+        "type": "observations",
+        "title": "**Bun**: Primary JavaScript runtime for both client and server development",
+        "summary": "**Bun**: Primary JavaScript runtime for both client and server development",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "runtime-build-system",
+          "line_range": [
+            4,
+            4
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-5",
+        "type": "observations",
+        "title": "**Docker/Podman**: Containerized development environment with compose orchestration",
+        "summary": "**Docker/Podman**: Containerized development environment with compose orchestration",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "runtime-build-system",
+          "line_range": [
+            5,
+            5
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-6",
+        "type": "observations",
+        "title": "**TypeScript**: Used throughout the codebase for type safety",
+        "summary": "**TypeScript**: Used throughout the codebase for type safety",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "runtime-build-system",
+          "line_range": [
+            6,
+            6
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-9",
+        "type": "observations",
+        "title": "**Vue.js 3**: Component-based UI framework using Composition API",
+        "summary": "**Vue.js 3**: Component-based UI framework using Composition API",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "frontend-client",
+          "line_range": [
+            9,
+            9
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-10",
+        "type": "observations",
+        "title": "**Pinia**: State management for reactive game state",
+        "summary": "**Pinia**: State management for reactive game state",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "frontend-client",
+          "line_range": [
+            10,
+            10
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-11",
+        "type": "observations",
+        "title": "**Vite**: Build tool and development server",
+        "summary": "**Vite**: Build tool and development server",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "frontend-client",
+          "line_range": [
+            11,
+            11
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-12",
+        "type": "observations",
+        "title": "**Vue Router**: Client-side routing",
+        "summary": "**Vue Router**: Client-side routing",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "frontend-client",
+          "line_range": [
+            12,
+            12
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-13",
+        "type": "observations",
+        "title": "**Vitest**: Unit testing framework",
+        "summary": "**Vitest**: Unit testing framework",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "frontend-client",
+          "line_range": [
+            13,
+            13
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-16",
+        "type": "observations",
+        "title": "**Bun WebSocket Server**: Real-time bidirectional communication",
+        "summary": "**Bun WebSocket Server**: Real-time bidirectional communication",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "backend-server",
+          "line_range": [
+            16,
+            16
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-17",
+        "type": "observations",
+        "title": "**AWS SDK**: Integration with AWS services",
+        "summary": "**AWS SDK**: Integration with AWS services",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "backend-server",
+          "line_range": [
+            17,
+            17
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-18",
+        "type": "observations",
+        "title": "**Sharp**: Image processing library",
+        "summary": "**Sharp**: Image processing library",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "backend-server",
+          "line_range": [
+            18,
+            18
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-19",
+        "type": "observations",
+        "title": "**Redis**: Caching and session management",
+        "summary": "**Redis**: Caching and session management",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "backend-server",
+          "line_range": [
+            19,
+            19
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-22",
+        "type": "observations",
+        "title": "**Amazon Bedrock**: AI model integration (Nova Pro, Claude Sonnet 3.7/4, Nova Canvas, Titan Text ...",
+        "summary": "**Amazon Bedrock**: AI model integration (Nova Pro, Claude Sonnet 3.7/4, Nova Canvas, Titan Text Embeddings v2)",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "aws-services",
+          "line_range": [
+            22,
+            22
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-23",
+        "type": "observations",
+        "title": "**DynamoDB**: Game state and inventory persistence",
+        "summary": "**DynamoDB**: Game state and inventory persistence",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "aws-services",
+          "line_range": [
+            23,
+            23
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-24",
+        "type": "observations",
+        "title": "**Amazon Cognito**: User authentication and authorization",
+        "summary": "**Amazon Cognito**: User authentication and authorization",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "aws-services",
+          "line_range": [
+            24,
+            24
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-25",
+        "type": "observations",
+        "title": "**S3 + CloudFront**: Asset storage and content delivery",
+        "summary": "**S3 + CloudFront**: Asset storage and content delivery",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "aws-services",
+          "line_range": [
+            25,
+            25
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-26",
+        "type": "observations",
+        "title": "**MemoryDB**: Vector database for image matching",
+        "summary": "**MemoryDB**: Vector database for image matching",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "aws-services",
+          "line_range": [
+            26,
+            26
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-31",
+        "type": "observations",
+        "title": "```bash",
+        "summary": "```bash",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "root-level",
+          "line_range": [
+            31,
+            31
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-33",
+        "type": "observations",
+        "title": "bun dev",
+        "summary": "bun dev",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "start-both-client-and-server-in-development-mode",
+          "line_range": [
+            33,
+            33
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-36",
+        "type": "observations",
+        "title": "bun install",
+        "summary": "bun install",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "install-dependencies-across-all-packages",
+          "line_range": [
+            36,
+            36
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-37",
+        "type": "observations",
+        "title": "```",
+        "summary": "```",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "install-dependencies-across-all-packages",
+          "line_range": [
+            37,
+            37
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-40",
+        "type": "observations",
+        "title": "```bash",
+        "summary": "```bash",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "client-commands",
+          "line_range": [
+            40,
+            40
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-41",
+        "type": "observations",
+        "title": "cd client",
+        "summary": "cd client",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "client-commands",
+          "line_range": [
+            41,
+            41
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-42",
+        "type": "observations",
+        "title": "bun run dev          # Start development server",
+        "summary": "bun run dev          # Start development server",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "client-commands",
+          "line_range": [
+            42,
+            42
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-43",
+        "type": "observations",
+        "title": "bun run build        # Production build",
+        "summary": "bun run build        # Production build",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "client-commands",
+          "line_range": [
+            43,
+            43
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-44",
+        "type": "observations",
+        "title": "bun run preview      # Preview production build",
+        "summary": "bun run preview      # Preview production build",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "client-commands",
+          "line_range": [
+            44,
+            44
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-45",
+        "type": "observations",
+        "title": "bun run test:unit    # Run unit tests",
+        "summary": "bun run test:unit    # Run unit tests",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "client-commands",
+          "line_range": [
+            45,
+            45
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-46",
+        "type": "observations",
+        "title": "bun run lint         # Lint and fix code",
+        "summary": "bun run lint         # Lint and fix code",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "client-commands",
+          "line_range": [
+            46,
+            46
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-47",
+        "type": "observations",
+        "title": "bun run format       # Format code with Prettier",
+        "summary": "bun run format       # Format code with Prettier",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "client-commands",
+          "line_range": [
+            47,
+            47
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-48",
+        "type": "observations",
+        "title": "```",
+        "summary": "```",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "client-commands",
+          "line_range": [
+            48,
+            48
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-51",
+        "type": "observations",
+        "title": "```bash",
+        "summary": "```bash",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "server-commands",
+          "line_range": [
+            51,
+            51
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-52",
+        "type": "observations",
+        "title": "cd server",
+        "summary": "cd server",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "server-commands",
+          "line_range": [
+            52,
+            52
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-53",
+        "type": "observations",
+        "title": "bun --watch server.ts           # Start server with hot reload",
+        "summary": "bun --watch server.ts           # Start server with hot reload",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "server-commands",
+          "line_range": [
+            53,
+            53
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-54",
+        "type": "observations",
+        "title": "bun test                        # Run tests with JUnit output",
+        "summary": "bun test                        # Run tests with JUnit output",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "server-commands",
+          "line_range": [
+            54,
+            54
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-55",
+        "type": "observations",
+        "title": "bun run bootstrap-dynamodb      # Setup local DynamoDB tables",
+        "summary": "bun run bootstrap-dynamodb      # Setup local DynamoDB tables",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "server-commands",
+          "line_range": [
+            55,
+            55
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-56",
+        "type": "observations",
+        "title": "```",
+        "summary": "```",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "server-commands",
+          "line_range": [
+            56,
+            56
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-59",
+        "type": "observations",
+        "title": "```bash",
+        "summary": "```bash",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "infrastructure-setup",
+          "line_range": [
+            59,
+            59
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-61",
+        "type": "observations",
+        "title": "./scripts/deploy-cognito.sh game-auth",
+        "summary": "./scripts/deploy-cognito.sh game-auth",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "deploy-cognito-resources",
+          "line_range": [
+            61,
+            61
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-64",
+        "type": "observations",
+        "title": "podman compose build && podman compose up --watch",
+        "summary": "podman compose build && podman compose up --watch",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "start-containerized-stack",
+          "line_range": [
+            64,
+            64
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-67",
+        "type": "observations",
+        "title": "podman exec server bun run /app/bootstrap-local-dynamodb.js",
+        "summary": "podman exec server bun run /app/bootstrap-local-dynamodb.js",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "bootstrap-local-dynamodb-first-time-only",
+          "line_range": [
+            67,
+            67
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-68",
+        "type": "observations",
+        "title": "```",
+        "summary": "```",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "bootstrap-local-dynamodb-first-time-only",
+          "line_range": [
+            68,
+            68
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-71",
+        "type": "observations",
+        "title": "**ESLint**: Linting with Vue and TypeScript configurations",
+        "summary": "**ESLint**: Linting with Vue and TypeScript configurations",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "code-quality",
+          "line_range": [
+            71,
+            71
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-72",
+        "type": "observations",
+        "title": "**Prettier**: Code formatting",
+        "summary": "**Prettier**: Code formatting",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "code-quality",
+          "line_range": [
+            72,
+            72
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-73",
+        "type": "observations",
+        "title": "**TypeScript**: Strict type checking enabled",
+        "summary": "**TypeScript**: Strict type checking enabled",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "code-quality",
+          "line_range": [
+            73,
+            73
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      },
+      {
+        "id": "observations-tech-74",
+        "type": "observations",
+        "title": "**Vitest**: Unit testing with coverage reporting",
+        "summary": "**Vitest**: Unit testing with coverage reporting",
+        "tags": [],
+        "source": {
+          "tool": "structured_markdown",
+          "file": "kiro\\tech.md",
+          "anchor": "code-quality",
+          "line_range": [
+            74,
+            74
+          ]
+        },
+        "observed_at": "2026-07-11T23:29:20.995542"
+      }
+    ]
   }
 }
