@@ -29,7 +29,6 @@ class ChatHost:
         self.mcp_clients: list[MCPClient] = [
             MCPClient("./weather_USA.py"),
             MCPClient("./weather_Israel.py"),
-            MCPClient("./page_rag.py"),
         ]
         self.tool_clients: dict[str, tuple[MCPClient, str]] = {}
         self.clients_connected = False
