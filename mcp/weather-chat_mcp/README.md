@@ -7,8 +7,18 @@ A simple MCP-based weather assistant that can answer USA weather questions via a
 - מריץ מערכת MCP עם שני כלי Python:
   - `weather_USA.py` – כלי מזג אוויר ל־USA שניגש ל־API רשמי
   - `weather_Israel.py` – כלי מזג אוויר לישראל שמפעיל דפדפן באמצעות Playwright כדי לחפש עיר ולקרוא תחזית
-- המארח (`host.py`) משלב את שני הכלים ומאפשר למודל Gemini לקרוא להם דרך כלי חיצוני
+- `page_rag.py` – כלי RAG שמחלץ תוכן טקסטואלי מדפי אינטרנט ונקה אותו עבור המודל
+- המארח (`host.py`) משלב את שלושת הכלים ומאפשר למודל Gemini לקרוא להם דרך כלי חיצוני
 - התקשורת נעשית דרך STDIO בין ה־host ל־MCP servers
+
+## שימוש בריפו הגדול
+
+הכלי `page_rag.py` מאפשר למודל לשאול דף אינטרנט חיצוני ולקבל ממנו תוכן טקסטואלי מנוקה. לאחר הרצת `host.py`, אפשר לשאול את מודל Gemini שאלות כמו:
+
+- `Please extract the cleaned text from https://example.com and summarize the key points.`
+- `Use the page extraction tool to read the article at https://example.com and tell me what it says about weather forecasts.`
+
+המודל יבחר את הכלי המתאים ויחזור את הטקסט המופשט ישירות בתשובה.
 
 ## דרישות
 
